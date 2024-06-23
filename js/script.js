@@ -40,23 +40,25 @@ function doSpecialThing() {
         return;
     }
     else {
-        changeFontSize();
         pressTrueButton++;
         document.getElementById('True').style.display = 'none';
+        document.getElementById('message1').style.display = 'none';
     }
-    document.getElementById('message1').style.display = 'none';
+    
     document.getElementById('gift-message').style.display = 'inline-block';
     document.getElementById('gift-button').style.display = 'inline-block';
 }
 
 function nextPage() {
     window.location.href = "best-wishes.html";
+    
 }
 
 function scrollPhoto(element) {
-    element.addEventListener('click', function () {
+    element.addEventListener('click', function() {
         this.style.transform = 'translateY(-45%)';
     });
+
     document.getElementById('instruction').style.display = 'none';
     
     setTimeout(function() { 
@@ -70,6 +72,8 @@ function getRandomPhoto() {
     const randomIndex = 1 + Math.floor(Math.random() * numberOfPhotos);
     const selectedPhoto = "cute" + randomIndex +".jpg";
     document.getElementById('longPhoto').src ="images/mot-chut-cute/" + selectedPhoto;
-
+    setTimeout(function(){
+        document.getElementById('instruction').innerHTML = "*Na oii, double tap để thấy sự bất ngờ nè";
+    }, 2000);
 }
 
