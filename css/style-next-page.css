@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+body {
+    background-color: #f8f0e5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items at the top */
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+    /* Full width of the viewport */
+    max-width: 800px;
+    /* Optional: set a max-width */
+    height: 100vh;
+    /* Full height of the viewport */
+    border: 2px solid #333;
+    overflow: hidden;
+    /* Hide overflow to keep the top part of the image visible */
+    position: relative;
+}
+
+#longPhoto {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    position: absolute;
+    top: -520px;
+    /* Ensure the top part of the image is always visible */
+    transition: transform 2s ease;
+    cursor: pointer;
+}
+
+#bottomButton {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    /* Distance from the bottom */
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#instruction {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Center horizontally */
+    color: black;
+    font-weight: bold;
+    font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#refresh{
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 150px;
+    color: black;
+    font-weight: bold;
+    font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+    #longPhoto {
+        top: -300px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #longPhoto {
+        top: -200px;
+    }
+    #instruction{
+        font-size: 0.8em;
+    }
+}
+
+
+@media only screen and (max-width: 510px) {
+    #longPhoto {
+        top: -100px;
+    }
+    #instruction{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #longPhoto {
+        top: 150px;
+    }
+    #instruction{
+        font-size: 0.8em;
+    }
+}
