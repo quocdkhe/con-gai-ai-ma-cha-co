@@ -55,10 +55,7 @@ function nextPage() {
 }
 
 function scrollPhoto(element) {
-    element.addEventListener('click', function() {
-        this.style.transform = 'translateY(-45%)';
-    });
-
+    element.style.transform = 'translateY(-45%)';
     document.getElementById('instruction').style.display = 'none';
     
     setTimeout(function() { 
@@ -73,7 +70,7 @@ function getRandomPhoto() {
     const selectedPhoto = "cute" + randomIndex +".jpg";
     document.getElementById('longPhoto').src ="images/mot-chut-cute/" + selectedPhoto;
     setTimeout(function(){
-        document.getElementById('instruction').innerHTML = "*Na oii, double tap để thấy sự bất ngờ nè";
+        document.getElementById('instruction').innerHTML = "*Na oii, chạm vào ảnh để thấy sự bất ngờ nè";
     }, 2000);
 }
 
