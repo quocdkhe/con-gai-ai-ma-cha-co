@@ -116,3 +116,12 @@ body {
         font-size: 0.8em;
     }
 }
+
+@media only screen and (min-width: 680px) and (min-height: 1024px){
+    #instruction{
+        bottom: 600px;
+    }
+    #longPhoto{
+        top: 30px;
+    }
+}
