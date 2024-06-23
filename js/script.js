@@ -55,7 +55,7 @@ function nextPage() {
 
 function scrollPhoto(element) {
     element.addEventListener('click', function () {
-        this.style.transform = 'translateY(-40%)';
+        this.style.transform = 'translateY(-45%)';
     });
     document.getElementById('instruction').style.display = 'none';
     
