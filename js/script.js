@@ -1,5 +1,5 @@
 /**
- * This function will resize proper size for font "L" "ỒN"
+ * 
  */
 function changeFontSize() {
     var getLarger = document.querySelectorAll('.get-larger');
@@ -70,7 +70,7 @@ function getRandomPhoto() {
     const selectedPhoto = "cute" + randomIndex +".jpg";
     document.getElementById('longPhoto').src ="images/mot-chut-cute/" + selectedPhoto;
     setTimeout(function(){
-        document.getElementById('instruction').innerHTML = "*Na oii, chạm vào ảnh để thấy sự bất ngờ nè";
+        document.getElementById('instruction').innerHTML = "*Cậu ơi, double tap để thấy sự bất ngờ nè";
     }, 2000);
 }
 
